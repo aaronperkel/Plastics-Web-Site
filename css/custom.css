@@ -1,0 +1,212 @@
+:root {
+    --main-bg-color: #ADD8E6;
+    --main-bg-color-rgba: rgba(253, 253, 253, .8);
+    --nav-bg-color-rgba: rgba(173, 216, 230, .8);
+    --main-text-color: #111111;
+    --background-odd: rgba(233, 233, 233, .8);
+    --background-even: rgba(253, 253, 233, .8);
+}
+
+* {
+    font-family: verdana;
+    line-height: 1.3em;
+    margin: 0;
+    padding: 0;
+}
+
+main,
+article,
+section,
+h1, h2, h3, h4, h5, h6,
+nav {
+   padding: 1%; 
+}
+
+html {
+    background-image: url(../../images/background.jpeg);
+    color: var(--main-text-color);
+}
+
+body {
+    max-width: 50em;
+    margin: auto;
+}
+
+.index li:nth-child(odd) {
+    background-color: var(--background-odd)
+}
+
+.index li:nth-child(even) {
+    background-color: var(--background-even)
+}
+
+main, footer {
+    background-color: var(--main-bg-color-rgba);
+}
+
+nav {
+    background-color: var(--nav-bg-color-rgba);
+    border-bottom: medium solid var(--main-bg-color);
+    text-align: center;
+}
+
+a:hover{
+    color: var(--main-text-color);
+}
+
+figure {
+    text-align: center;
+    padding: 2em;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    text-indent: 3em;
+    padding-bottom: 1em;
+}
+
+.form p {
+    text-indent: .2em;
+}
+
+.form form {
+    display: inline-block;
+    margin: auto;
+}
+
+table {
+    border: solid black;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+table+p {
+    padding-top: 1em;
+}
+
+td,
+th {
+    border: thin solid black;
+    padding: .5em;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--background-odd);
+}
+
+tr:nth-child(even) {
+    background-color: var(--background-even);
+}
+
+tr:hover {
+    background-color: lightblue;
+}
+
+caption {
+    font-variant: small-caps;
+    font-weight: bold;
+    padding-top: 1em;
+}
+
+cite {
+    font-size: xx-small;
+}
+
+figcaption {
+    font-size: small;
+}
+
+nav a:link { 
+    color: darkblue;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: darkblue;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--main-text-color);
+    color: var(--main-bg-color);
+    text-decoration: underline;
+}
+
+.activePage {
+    background-color: var(--main-bg-color-rgba)
+}
+
+nav a {
+    display: inline-block;
+    padding: 1%;
+}
+
+form {
+    background-color: var(--main-bg-color-rgba);
+    border: thin solid black;
+    clear: both;
+    max-width: 30em;
+    margin: auto;
+    padding: 1%;
+}
+
+form p {
+    text-indent: 0;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.buttons input {
+    background-color: lightgreen;
+    font-weight: bold;
+    font-size: larger;
+    padding: .4em;
+    width: 50%;
+}
+
+fieldset {
+    padding: 1%;
+}
+
+label[for^="txt"] {
+    display: block;
+}
+
+input, textarea {
+    width: 99%;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: inherit;
+}
+
+legend {
+    margin-top: 1%;
+}
+
+.roundedCorners {
+    border-radius: 1em;
+    border: thin solid green;
+}
+
+.mistake {
+    color: red;
+    background-color: azure;
+    padding: .5em;
+    text-indent: 0;
+}
+
+/* 
+.floatRight {
+    float: right;
+}
+*/
